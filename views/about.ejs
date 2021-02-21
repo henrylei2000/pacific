@@ -18,11 +18,12 @@
       </header>
 
       <main role="main" class="inner cover">
-      <% if (email) { %>
-        <p class="lead"><%= email %></p>
-      <% } %>
         <p class="lead"><img src="/images/watercolor.png" height="105"></p>
-        <p class="lead">Who Are We?</p>
+        <% if (email) { %>
+          <h1 class="lead">Welcome, <%= email %>.</h1>
+        <% } else { %>
+          <p class="lead">Who Are We?</p>
+        <% } %>
         <p class="lead">In January 2021, four Chinese American college students came together to build Bridging Pacific -
           a nonprofit that provides organization that provides resources and communities for Chinese American immigrants.
           As immigrants’ daughters and sons, we are passionate about establishing a resource bank for Chinese immigrants to navigate the challenges of living in a new country.
@@ -31,19 +32,19 @@
           <div class="row">
             <div class="col-sm">
               <img src="/images/valentina.jpeg" class="rounded-circle" height="105">
-              Valentina Xu
+              <div class="name">Valentina Xu</div>
             </div>
             <div class="col-sm">
               <img src="/images/sharon.jpeg" class="rounded-circle" height="105">
-              Sharon Chen
+              <div class="name">Sharon Chen</div>
             </div>
             <div class="col-sm">
               <img src="/images/brandon.jpeg" class="rounded-circle" height="105">
-              Brandon Shi
+              <div class="name">Brandon Shi</div>
             </div>
             <div class="col-sm">
               <img src="/images/henry.jpeg" class="rounded-circle" height="105">
-              Henry Lei
+              <div class="name">Henry Lei</div>
             </div>
           </div>
         </div>
