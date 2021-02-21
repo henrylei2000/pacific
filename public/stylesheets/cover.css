@@ -99,7 +99,9 @@ body {
   font-weight: 700;
 }
 
-
+.lead {
+  padding-bottom: 2em;
+}
 /*
  * Footer
  */
