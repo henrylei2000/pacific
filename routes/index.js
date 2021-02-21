@@ -2,7 +2,7 @@ var express = require('express');
 var router = express.Router();
 
 var admin = require("firebase-admin");
-var serviceAccount = require("./bridge-a39c9-firebase-adminsdk-myyr7-e46af30f3a.json");
+var serviceAccount = require("../bridge-a39c9-firebase-adminsdk-myyr7-e46af30f3a.json");
 admin.initializeApp({
   credential: admin.credential.cert(serviceAccount),
   databaseURL: "https://bridge-a39c9-default-rtdb.firebaseio.com"
