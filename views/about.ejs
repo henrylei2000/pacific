@@ -1,0 +1,31 @@
+
+<!doctype html>
+<html lang="en">
+  <% include head %>
+
+  <body class="text-center">
+
+    <div class="cover-container d-flex h-100 p-3 mx-auto flex-column">
+      <header class="masthead mb-auto">
+        <div class="inner">
+          <h3 class="masthead-brand"><img src="/images/bp.jpg" height="75"></h3>
+          <nav class="nav nav-masthead justify-content-center">
+            <a class="nav-link" href="/">Home</a>
+            <a class="nav-link active" href="about">About</a>
+            <a class="nav-link" href="contact">Contact</a>
+          </nav>
+        </div>
+      </header>
+
+      <main role="main" class="inner cover">
+      <% if (email) { %>
+        <p class="lead"><%= email %></p>
+      <% } %>
+        <p class="lead"><img src="/images/watercolor.png" height="105"></p>
+        <p class="lead">Bridging Pacific 是由四位康奈尔和斯沃斯莫尔大学生创立的非盈利组织，致力于为中国移民家庭及留学生提供各种适应美国的资源和交流的平台。</p>
+      </main>
+      <% include foot %>
+    </div>
+
+  </body>
+</html>
