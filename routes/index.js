@@ -11,7 +11,7 @@ var db = admin.database();
 
 /* GET home page. */
 router.get('/', function(req, res, next) {
-  res.render('index', { title: 'Bridging Pacific' });
+  res.render('home', { title: 'Bridging Pacific' });
 });
 
 router.post('/signup', function(req, res, next) {
@@ -29,6 +29,10 @@ router.get('/about', function(req, res, next) {
 /* GET contact page. */
 router.get('/contact', function(req, res, next) {
   res.render('contact', { title: 'contact' });
+});
+
+router.get('/index', function(req, res, next) {
+  res.render('index', { title: 'home' });
 });
 
 module.exports = router;
