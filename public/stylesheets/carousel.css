@@ -35,6 +35,27 @@ body {
 }
 
 
+.bd-placeholder-img {
+  font-size: 1.125rem;
+  text-anchor: middle;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  user-select: none;
+}
+
+@media (min-width: 768px) {
+  .bd-placeholder-img-lg {
+    font-size: 3.5rem;
+  }
+}
+
+.bg-color {
+  background-color:#f7f2ec !important;
+  /*background-image: linear-gradient(#f7f2ec, white);*/
+}
+
+
+
 /* MARKETING CONTENT
 -------------------------------------------------- */
 
@@ -51,9 +72,24 @@ body {
   margin-right: .75rem;
   margin-left: .75rem;
 }
+
+.name {
+  font-size: 0.8em !important;
+  text-decoration: none;
+  color: #5a5a5a;
+}
 /* rtl:end:ignore */
 
+.arrow {
+  margin-top: 0;
+  display: inline-block;
+  transition: transform 0.8s linear;
+  cursor: pointer;
+}
 
+.arrow.reverse {
+  transform: rotateX(180deg);
+}
 /* Featurettes
 ------------------------- */
 
@@ -90,4 +126,9 @@ body {
   .featurette-heading {
     margin-top: 7rem;
   }
+}
+
+.btn-primary {
+  background-color: #0d6efd !important;
+  border-color: #0d6efd !important;
 }
